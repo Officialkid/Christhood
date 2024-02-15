@@ -1,0 +1,1181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    
+    font-family: 'Montserrat', 'sans-serif','Poppins';
+}
+.header{
+    background-image: linear-gradient(transparent,transparent),url(/images/background.jpg);
+    height: 110vh;
+    background-color:rgba(31, 30, 30,0.7) ;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+   
+}
+.nav{
+    display: flex;
+   position: relative;
+    background-color:rgba(31, 30, 30,0.7) ;
+    justify-content: space-between;
+    align-content: center;
+    top:0;
+    left: 0;
+    right: 0;
+    box-shadow: 0.5px 10px rgba(0,0,0,0.5);  
+}
+.nav h2{
+    color: goldenrod;
+font-size: 15px;
+text-align: center;
+visibility: hidden;
+
+}
+span .fa-plus{
+    margin-left: 10px;
+    font-size: 15px;
+
+}
+#menu-bar{
+    display: none;
+}
+
+
+.nav .navlinks ul li{
+    margin: 12px 15px;
+    margin-left: 25px;
+    padding: 10px 12px;
+    list-style: none;
+    float: left;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav .navlinks ul li a{
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    font-family: 900;
+}
+.navlinks ul li a:hover{
+    box-shadow:0 0 5px rgba(235, 201, 8),
+    0 0 5px rgb(118, 101, 2);
+    color: #fff;
+}
+.nav .navlinks ul li ul{
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 300px;
+    background-color: #121212;
+    display: none;
+
+}
+.nav .navlinks ul li ul li{
+    width: 90%;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+.nav .navlinks ul li :focus-within >ul,
+.nav .navlinks ul li:hover >ul{
+    display: initial;
+
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgba(235, 201, 8);
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+    border: 1px solid, rgba(235, 201, 8) ;
+    
+}
+.intro-box {
+    color: goldenrod;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 250px;
+}
+
+
+.header label{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:768px) {
+     .nav h2{
+       visibility: visible;  
+}
+.intro-box 
+{
+    visibility: hidden;
+}.header{
+        padding: 20px;
+        width: 100%;
+        background-image: linear-gradient(transparent,transparent),url(/images/logo.jpg);
+        height:600px;
+        justify-content: center;
+        background-position: center;
+        margin-left: 10px;
+        margin-top: 2px;
+        background-color:rgba(33, 11, 87, 0.6) ;
+        overflow: hidden;
+        
+    }.header input{
+        visibility: hidden;
+    }
+    
+    #menu-bar{
+        display: initial;
+        float: right;
+    }
+    .nav .navlinks{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.5);
+        overflow: hidden;
+        display: none;
+        border-top: 1px solid rgba(0,0,0,0.5);
+    }
+    .nav .navlinks ul li{
+        width: 100%;
+        text-align: center;
+    }
+    .nav .navlinks ul li ul{
+        position: relative;
+        width: 100%;
+        
+    }
+    .nav .navlinks ul li ul li{
+        background-color: rgba(0,0,0,0.5);
+        text-align: left;
+    }
+    .nav .navlinks ul li ul li a:hover{
+        box-shadow: none;
+    }
+    .show{
+        display: block;
+        color: white;
+        font-size: 20px;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+    #menu-bar:checked ~.nav .navlinks{
+        display: inline-block;
+    }
+    
+.home-section{
+    width: 90%;
+
+}.about-card{
+    flex-direction: column;
+    
+    width: 50%;
+    height: 50%;
+}
+   }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-section{
+    width: 95%;
+    margin: auto;
+    padding: 2px 6px;
+    margin-top: 15px;
+}
+.about-intro{
+    margin-top: 10px;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(/images/about-home.png);
+}
+.about-card{
+    width: 30%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute; 
+    margin-top: 12px;
+    margin-left: 20px;
+    top: 740px;
+    left: 15%;
+    overflow: hidden;
+    border-radius: .5rem ;
+    float: left;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px #cbced1 solid;
+    
+}
+.card-box{
+    width: 30%;
+    height: 55%;
+    background: #160f46d6;
+    position: absolute; 
+    margin-top: 12px;
+    margin-left: 20px;
+    top: 750px;
+    left: 12%;
+    overflow: hidden;
+    border-radius: .5rem ;
+    float: left;   
+}
+
+.about-card h3 {
+    color: #fff;
+    background-color: #121212;
+    height: 50px;
+    border-radius: .6rem;
+    border: 2px solid;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: underline;
+   
+}
+.about-card p{
+    color: #000; 
+    text-align: left;
+    font-size: 26px;
+    font-weight: 600;
+}
+.more-btn{
+    width: 60px;
+    height: 50px;
+    background-color: goldenrod;
+    color: #000;
+    position: relative;
+    cursor: pointer;
+    font-size:24px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 20%;
+}
+.more-btn:hover{
+    border: 1px solid goldenrod;
+    background: goldenrod;
+    color: white;
+    transform: translateX(-50%);
+    transition: 0.5s;
+
+}
+.v-section{
+    width: 90%;
+    margin: auto;
+    padding: 2px 3px;
+    margin-top: 12px;
+}
+.v-row{
+    display: flex;
+   justify-content: space-between;
+    margin-bottom: 10px;
+   
+}
+.v-col{
+   flex-basis: 45%;
+    background: #fff6f6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 2px ;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+#v{
+    color: #5e77f4;
+    font-size: 25px;
+    display: block;
+    font-weight: 900;
+    text-align: center;
+}
+#m{
+    
+    color: #af4dec;
+    font-size: 25px;
+    display: block;
+    font-weight: 900;
+    text-align: center;
+}
+#p{
+    color: #53c741;
+    font-size: 25px;
+    display: block;
+    font-weight: 900;
+    text-align: center;
+}
+#dim{
+    color: #cb6348;
+    font-size: 25px;
+    display: block;
+    font-weight: 900;
+    text-align: center;
+}
+.v-col p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+   
+}
+.ministries-home{
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+    background-image: linear-gradient(rgba(17, 5, 66, 0.8),rgba(14, 5, 55, 0.6)),url(/images/ministries\ home.png);
+}
+.ministries-home h2{
+    font-size: 62px;
+    text-align: center;
+    top: 30%;
+    font-size: 900;
+    color: white;
+    padding: 2px 8px 2px;
+    position: relative;
+    margin-top: 10px;
+   
+}
+.button-icon {
+    display: flex;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: 200px;
+  }
+  
+  .icon {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+  }
+  
+  .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .cube {
+    transition: all 0.5s;
+    transform-style: preserve-3d;
+    width: 280px;
+    height: 20px;
+  }
+  
+  .button-icon:hover {
+    border-color:goldenrod;
+  }
+  
+  .button-icon:hover .cube {
+    transform: rotateX(90deg);
+  }
+  
+  .side {
+    position: absolute;
+    
+    height: 47px;
+    width: 280px;
+    display: flex;
+    font-size:20px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+  
+  .top {
+    background: rgba(17, 5, 66, 0.8);
+    color: #fff;
+    text-decoration: none;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+  }
+  
+  .front {
+    background: #222229;
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+  }
+  /*FOOTER*/
+
+  .footer{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    background-color:#0c052f;
+    color: #cbced1;
+    font-family: "Roboto", sans-serif;
+    margin: 5px 3px 6px;
+    padding: 2px 6px;
+    
+  }
+  .footer-col{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+ 
+  }
+  .footer-info{
+    flex-basis: 30%;
+    padding: 10px 12px;
+    margin-left: 12px;
+    position: relative;
+  }
+  .footer-info img{
+    width: 150px;
+    height: 150px;
+  }
+  .footer-info h2{
+    font-family: "Protest Strike", sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    margin-left: 10px;
+    text-decoration: underline;
+    font-weight: 800;
+    text-align: center;
+  }
+  .footer-info p {
+    color: #cbced1;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-display: bolder;
+    
+    margin: 10px;
+    text-shadow: 2px 2px #433c03,
+                2px 2px #433c03;
+  }
+  .footer-info h4{
+    color: white;
+    border-top: 1.5px solid #cbced1;
+    font-size: 26px;
+    margin-left: 10px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .footer-info a {
+    color: #fff;
+    
+  }
+  .footer-info a  {
+    color: #fff;
+    
+ 
+  }
+  .footer-info i{
+    color: #fff;
+    font-size: 18px; 
+  }
+  #foot{
+    font-size: 12px;
+    font-display: none;
+  }
+  .footer-info a  p :hover{
+    display: initial;
+    color: gold;
+    font-display: bold;
+
+  }
+  
+  
+  /* MINISTRIES */
+  
+  .min-header{
+    background-image: linear-gradient(transparent,rgb(18, 18, 18, 0.4) ),url(/images/ministries\ home.png);
+    height:80vh;
+    background-color:rgba(31, 30, 30,0.7) ;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+   
+}
+.mcard{
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 0 5px #000 inset,
+    0 0 5px #111 inset;
+    top: 10px;
+    left: 50%;
+    float: left;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 40%;
+    background-color: #cbced1;
+}
+.mcard h3{
+    font-size: 45px;
+    font-weight: 900;
+    font-family: 'Protest Riot', sans-serif;
+    top: 10%;
+    color: goldenrod;
+    box-shadow: 0 0 5px #000 inset,
+    0 0 5px #111 inset;
+    margin-top: 50px;
+    transform: translateY(70%);
+    text-align: center;
+}
+
+.ministries{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 2px 6px;
+  
+}
+.ministries h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Protest Strike', sans-serif;
+    font-weight: 600;
+}
+#m1{
+    color: rgba(21, 131, 21, 0.8);
+    background-color:rgb(231, 219, 219);
+}
+#m2{
+    color: rgba(79, 101, 7, 0.8);
+    background-color:rgb(231, 219, 219);
+}
+#m3{
+    background-color:rgb(231, 219, 219);
+    color: #121212; 
+}
+#m4{
+    color: #fff6f6;
+    background-color:rgb(236, 198, 225);
+     
+}
+#m5{
+    background-color:rgb(234, 176, 152);
+    color: #05073c;
+}
+#m6{
+    color: #fff6f6;
+    background-color: #000;
+}
+#m7{
+    background-color: #9d9b14; 
+    
+   
+}
+.m7 {
+    font-family: 'Protest Riot', sans-serif;
+    font-style: italic;
+}
+#m8{
+    background-color: #705bb5;
+    color: #fff;
+}
+#m9{
+    background-color: #7493a0;
+    color: #05073c;
+}
+#m10{
+    background-color: bisque;
+    color: #705bb5;
+}
+#m11{
+    background-color: #7493a0;
+    color: wheat;
+}
+#m12{background-color: #1c0b26;
+color:whitesmoke
+}
+.ministries p{
+    color: rgb(6, 16, 91);
+    font-size: 20px;
+    display: italic;
+    font-weight: 700;
+    text-align: center;
+}
+.min-col-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cbced1;
+    margin-top: 10px;
+}
+.min-content{
+    flex-basis: 45%;
+    border: 1px solid transparent;
+    position: relative;
+    text-align: center;
+}
+.min-content img{
+    width: 300px;
+    height: 400px;
+}
+.min-content p{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Diphylleia', serif;
+    line-height: 1;
+    margin: 10px 12px 15px 6px;
+}
+.min-content i b{
+    color: #1c0b26;
+}
+
+.btn-conteiner {
+    display: flex;
+    justify-content: center;
+    --color-text: #ffffff;
+    --color-background: #705bb5;
+    --color-outline: #ff145b80;
+    --color-shadow: #00000080;
+  }
+  
+  .btn-content {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: 1s;
+    border-radius: 90px;
+    box-shadow: 0 0 0.2em 0 var(--color-background);
+  }
+  
+  .btn-content:hover, .btn-content:focus {
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+  }
+  
+  .btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.8);
+  }
+  
+  .btn-content:hover .icon-arrow {
+    transition: 0.5s;
+    margin-right: 25px;
+  }
+  
+  .icon-arrow {
+    width: 30px;
+    margin-left: 10px;
+    position: relative;
+    top: 6%;
+  }
+ 
+  /* SVG animations */
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+  
+    50% {
+      fill: var(--color-background);
+    }
+  
+    100% {
+      fill: white;
+    }
+  }
+  
+  /* Button animations */
+  @-webkit-keyframes btn-content {
+    0% {
+      outline: 0.2em solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+  
+  @keyframes btn-content {
+    0% {
+      outline: 0.2em solid var(--color-background);
+      outline-offset: 0;
+    }
+  }
+
+
+/*INTERNATIONAL FAITH CHAPEL*/
+/*NAVBAR*/
+.ifc{
+    background-color:rgba(31, 30, 30,0.7) ;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.international-faith-chapel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.international-faith-chapel img{
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ifc-col{
+    width: 90%;
+    margin: auto;
+    padding: 2px 6px;
+}
+.ifc-col i{
+    text-align: center;
+    color: #433c03;
+    font-size: 22px;
+    display: block;
+}
+
+.ifc-body h3{
+    text-decoration: underline;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 800;
+    color: #121212;
+    margin-left: 12px;
+    margin-bottom: 5px;
+    
+}
+.ifc-body h4{
+    text-decoration: underline;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 800;
+    color: #121212;
+    margin-left: 12px;
+    margin-bottom: 5px;
+    
+}
+.ifc-body p{
+    font-size:18px ;
+    font-weight: 600;
+    padding: 5px;
+    margin: 10px;
+}
+#m-std{
+    color: #53c741;
+}
+#m-vm{
+    color: #9d9b14;
+    box-shadow: 0 0 0 #433c03,
+    0 0 0 #9d9b14;
+    font-family: 'Diphylleia', serif;
+}
+
+/*TEENS LIFE MENTORSHIP PROGRAM*/
+.tlm-head{
+   
+    height: 80vh;
+    background:rgba(35, 19, 82, 0.9) ;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+   
+}
+.tlm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+    
+}
+.tlm-head-content{
+    margin: 3px 2px;
+    flex-basis: 45%;
+    position: relative;
+    text-align: center;
+   
+    
+}
+.tlm-head-content h2{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Protest Riot', sans-serif;
+    color:  #e0dc10;
+    font-display: bold;
+    box-shadow: 0 0 0 #424112,
+                 0 0 0 #9d9b14;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-left: 5px solid #fff;
+    
+}
+.tlm-head-content i{
+    color: #147905;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.tlm-head-content .tlm-img{
+    width: 100px;
+    height: 50px;
+}
+.tlm-head-content img{
+    width: 400px;
+    height:400px;
+    margin-top: 8px;
+}
+.tlm-overview{
+    width:85%;
+    margin: auto;
+    padding: 2px;
+}
+.tlm-intro h3{
+    font-size: 40px;
+    font-weight: 650;
+    text-align: center;
+    color: gold;
+    background-color: #7493a0;
+    margin-top: 10px;
+}
+.tlm-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+}
+.tlm-col{
+    position: relative;
+    flex-basis: 52%;
+    padding: 5px;
+    text-align: center;
+    
+}
+.tlm-col img{
+
+    width: 100%;
+    height: 500px;
+    margin-top: 15px;
+    margin: 10px;
+   
+}
+.tlm-col-card{
+    width: 80%;
+    height:450px;
+    background-color: #d9dae9;
+}
+.tlm-col p{
+    font-size: 17px;
+    color:#424112;
+    text-align: justify; 
+    break-inside: 2%;
+    
+}
+
+.tnl-mission-col{
+    position: relative;
+    flex-basis: 52%;
+    padding: 5px;
+    text-align: center;
+    
+}
+.tnl-mission-col img{
+
+    width: 90%;
+    height: 300px;
+    margin-top: 15px;
+    margin: 10px;
+   
+}
+
+.tnl-mission-col p{
+    font-size: 17px;
+    color:#424112;
+    text-align: justify; 
+    break-inside: 2%;
+    
+}
+#missions-tnl{
+    background-color: #cb6348;
+}
+#pm{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+#objectives-tnl{
+    background-color: #4e4f52;
+}
+#po{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.tnl-approach{
+    width: 90%;
+    margin: auto;
+    padding: 2px 6px;
+}
+.tnl-approach H3{
+    font-size: 45px;
+    color: orangered;
+    font-weight: 700;
+
+}
+.tnl-approach-col{
+    flex-basis: 48%;
+    position: relative;
+    padding: 4px;
+    border: 1px solid #4e4f52;
+}
+.tnl-sessions{
+    font-size: 45px;
+    color: #424112;
+    font-weight: 700;
+}
+.tlm-session-col{
+    flex-basis: 48%;
+    position: relative;
+    padding: 4px;
+}
+.tlm-session-col{
+    position: relative;
+    flex-basis: 52%;
+    padding: 5px;
+    text-align: center;
+    
+}
+.tlm-session-col img{
+
+    width: 90%;
+    height: 200px;
+    margin-top: 15px;
+    margin: 10px;
+   
+}
+
+.tlm-session-col p{
+    font-size: 17px;
+    color:#424112;
+    text-align: justify; 
+    break-inside: 2%;
+    
+}
+#approach{
+  width: 85%;
+  height: 300px;  
+}
+
+/*CONTACT INFORMATION PAGE*/
+.contact-body{
+    background: #eee7b9;
+}
+.contact{
+    background-color:rgba(31, 30, 30,0.7) ;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.contact-box{
+        color: rgb(233, 223, 199);
+        font-size: 30px;
+        text-align: center;
+        margin-top: 180px;
+       
+}
+.location{
+    width: 90%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 90%;
+    margin: auto;
+    
+}
+.contact-col{
+flex-basis: 48%;
+margin-bottom: 30px;
+}
+.contact-col div{
+display: flex;
+align-items: center;
+margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col  div p{
+    padding: 0;
+
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+.red-btn:hover{
+    color: #FFF;
+}
+/*TESTIMONY PAGE*/
+
+.testimony{
+    background:rgba(31, 30, 30,0.7) ;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-img{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.carousel-caption .d-none .d-md-block h2{
+    text-align: center;
+    font-size: 30px;
+    transform: translateX(-50%,-50%);
+}
+.about-section{
+    width: 90%;
+    margin: auto;
+    padding: 3px 5px;
+    margin-bottom: 5px;
+}
+.about-section h2{
+    font-size: 26px;
+    font-weight: 900;
+    font-display: bold;
+    text-align: center;
+    color: #7493a0;
+    margin:10px;
+    padding: 5px 6px;
+    text-shadow: 0,0,0,#424112,
+                 0,0,0,#424112;
+}
+.about-section h3{
+    font-size: 22px;
+    font-weight: 800;
+    margin:10px;
+    padding: 5px 6px;
+    color: #350a50;
+    font-display: bold;
+    text-shadow: 0,0,0,#222229,
+                 0,0,0,#222229;
+}
+.about-section p{
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+    margin: 2px 5px;
+    color: #05073c;
+}
+.abt-row{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.abt-col{
+    position: relative;
+    flex-basis: 45%;
+
+}
+.abt-col i{
+    color: #424112;
+    font-size: 18px;
+}
+.abt-col p{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    margin: 2px 5px;
+    color: #05073c;
+}
+.abt-col img{
+    width: 400px;
+    height: 500px;
+}
+ #a5{
+    background-color: #c3bcbc;
+    color: #fff;
+}
